@@ -1,5 +1,5 @@
 const app = require('./index');
-const logger = require('../utils/winston.util');
+const logger = require('./utils/winston.utils');
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
