@@ -19,6 +19,8 @@ app.set("view engine", "html");
 app.set("layout extractScripts", true);
 app.use(expressLayouts);
 
+app.use("/public", require("./routes/public"));
+
 app.use(function (err, req, res, next) {
   logger.error("--error", err);
   res.status(err.status || 500);
