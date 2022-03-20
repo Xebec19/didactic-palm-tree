@@ -1,0 +1,23 @@
+* {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.navbar-container {
+  padding: 0px;
+  margin: 0px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-container .navbar__logo-cntn .navbar__logo {
+  width: 2rem;
+  height: 2rem;
+}
+/*# sourceMappingURL=layout.css.map */

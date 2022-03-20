@@ -1,7 +1,8 @@
 // below function adds global variables for views
 exports.addGlobals = async(req,res,next) => {
     res.locals = {
-        baseUrlPrefix: ''
+        baseUrlPrefix: '',
+        title: 'Emus'
     }
     next();
 }
