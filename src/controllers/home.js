@@ -1,4 +1,4 @@
-const { sar } = require("../utils/responseHandler.utils");
+const { sendResponse } = require("../utils/responseHandler.utils");
 const logger = require("../utils/winston.utils");
 
 /**
@@ -8,6 +8,5 @@ const logger = require("../utils/winston.utils");
  * @desc : renders home page
  */
 exports.homePage = async (req, res, next) => {
-    // sar(true,'home',null);
-    return res.render('home');
+  return await sendResponse({ status: true, page: "home", data: null }, res);
 };

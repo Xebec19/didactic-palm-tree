@@ -1,5 +1,21 @@
-@import './global.scss';
+@import 'global.scss';
+
 .home-container{
-    padding: 2rem 4rem;
-    display: flex;
+     .banner-cntn{
+         width: 100%;
+         .banner__card{
+             border-radius: 5px;
+             background-color: $bg2;
+             padding: 2rem 4rem;
+             margin: 10rem 15rem;
+             .title{
+                 font-family: $pfont;
+                 color: white;
+             }
+             .subtitle{
+                 font-family: $sfont;
+                 color:white;
+             }
+         }
+     }
 }
