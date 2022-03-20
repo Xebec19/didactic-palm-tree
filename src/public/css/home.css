@@ -1,9 +1,7 @@
-* {
-  margin: 0 auto;
-  padding: 0px;
-}
-
 .home-container {
   padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=home.css.map */
