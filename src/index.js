@@ -1,10 +1,11 @@
 const express = require("express");
 const logger = require("./utils/winston.utils");
-const morganMiddleware = require("./utils/morgan.utils");
+const morganMiddleware = require("./utils/morgan.middleware");
 const cors = require("cors");
 const path = require("path");
 const app = (module.exports = express());
 const expressLayouts = require("express-ejs-layouts");
+const { addGlobals } = require("./utils/globalVars.middleware");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -18,8 +19,9 @@ app.set("views", path.join(__dirname, "public/views"));
 app.set("view engine", "html");
 app.set("layout extractScripts", true);
 app.use(expressLayouts);
+app.use(addGlobals);
 
-app.use("/public", require("./routes/public"));
+app.use("/public", require("./routes/home"));
 
 app.use(function (err, req, res, next) {
   logger.error("--error", err);
