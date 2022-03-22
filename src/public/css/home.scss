@@ -3,6 +3,16 @@
 .home-container{
      .banner-cntn{
          width: 100%;
+         .banner-background{
+             position: absolute;
+             top: 0px;
+             z-index: -1;
+             img{
+                 width: 100%;
+                 height: fit-content;
+                 object-fit: contain;
+             }
+         }
          .banner__card{
              border-radius: 5px;
              background-color: $bg2;

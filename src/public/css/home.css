@@ -19,6 +19,21 @@
   width: 100%;
 }
 
+.home-container .banner-cntn .banner-background {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+.home-container .banner-cntn .banner-background img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .home-container .banner-cntn .banner__card {
   border-radius: 5px;
   background-color: #6b7b8c;
