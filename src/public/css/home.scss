@@ -1,12 +1,16 @@
 @import "global.scss";
 
 .home-container {
+    z-index: -1;
+    background-color: $bg1;
   .banner-cntn {
+    //background-color: ;
     width: 100%;
     .banner-background {
       position: absolute;
       top: 0px;
       z-index: -1;
+      filter: brightness(50%);
       img {
         width: 100%;
         height: fit-content;
@@ -39,7 +43,30 @@
     }
   }
   .feature-section {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5px;
+    background-color: $bg1;
+    .feature__card {
+      transition: all ease-in-out 0.2s;
+      width: calc(30% - 8rem);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      margin-top: -66px;
+      background-color: $bg3;
+      padding: 2rem;
+      .features__title {
+        font-size: 18px;
+        font-family: $pfont;
+      }
+      .features__description {
+        font-size: 16px;
+        font-family: $sfont;
+        color: $bg1;
+      }
+    }
+    .feature__card:hover {
+      transform: translateY(8px);
+    }
   }
 }
