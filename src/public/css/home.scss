@@ -1,31 +1,45 @@
-@import 'global.scss';
+@import "global.scss";
 
-.home-container{
-     .banner-cntn{
-         width: 100%;
-         .banner-background{
-             position: absolute;
-             top: 0px;
-             z-index: -1;
-             img{
-                 width: 100%;
-                 height: fit-content;
-                 object-fit: contain;
-             }
-         }
-         .banner__card{
-             border-radius: 5px;
-             background-color: $bg2;
-             padding: 2rem 4rem;
-             margin: 10rem 15rem;
-             .title{
-                 font-family: $pfont;
-                 color: white;
-             }
-             .subtitle{
-                 font-family: $sfont;
-                 color:white;
-             }
-         }
-     }
+.home-container {
+  .banner-cntn {
+    width: 100%;
+    .banner-background {
+      position: absolute;
+      top: 0px;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+      }
+    }
+    .banner__card {
+      border-radius: 5px;
+      background-color: $bg2;
+      padding: 10px;
+      margin: 10rem 15rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      .banner-border {
+        border-radius: 5px;
+        padding: 2rem 4rem;
+        margin: 1px;
+        border: 1px solid $bg3;
+        .title {
+          font-family: $pfont;
+          color: white;
+          font-size: 32px;
+        }
+        .subtitle {
+          font-family: $sfont;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .feature-section {
+      display: flex;
+      flex-wrap: wrap;
+  }
 }
