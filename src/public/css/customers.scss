@@ -1,7 +1,29 @@
-.customers-section{
-    .cust__parent{
-        .cust__child{
-            
+@import "global.scss";
+.customers-section {
+  .cust__parent {
+    .cust__child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0rem;
+      .cust__stmt {
+        width: calc(80% - 20rem);
+        margin: 2rem 4rem;
+        font-family: $sfont;
+      }
+      .cust__img-wrapper {
+          text-align: center;
+        .cust__image {
+          height: 8rem;
+          width: 8rem;
+          border-radius: 100%;
         }
+        .cust__name{
+            margin-top: 1rem;
+            font-family: $pfont;
+        }
+      }
     }
+  }
 }

@@ -104,4 +104,33 @@
   -webkit-transform: translateY(8px);
           transform: translateY(8px);
 }
+
+.home-container .our-partners {
+  width: 100%;
+  font-size: 32px;
+  font-family: "quattrocento_sansbold", "Times New Roman";
+}
+
+.home-container .companies-section {
+  margin: 1rem 0px;
+}
+
+.home-container .companies-section .companies__parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-container .companies-section .companies__parent .companies__child .companies__img {
+  width: 12rem;
+  height: 12rem;
+}
 /*# sourceMappingURL=home.css.map */

@@ -66,4 +66,24 @@
       transform: translateY(8px);
     }
   }
+  .our-partners {
+    width: 100%;
+    font-size: 32px;
+    font-family: $pfont;
+  }
+  .companies-section {
+    margin: 1rem 0px;
+    .companies__parent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .companies__child {
+        .companies__img {
+          width: 12rem;
+          height: 12rem;
+        }
+      }
+    }
+  }
 }
