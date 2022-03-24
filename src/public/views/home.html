@@ -1,8 +1,12 @@
 <section class="home-container">
-    <%-include('./banner.html') %>
+  <%-include('./banner.html') %> <%- include('./features.html') %> <%-
+  include('./customers.html') %> <%- include('./companies.html') %> <%-
+  include('./footer.html') %>
 </section>
 
 <%- contentFor('styles') %>
 <link rel="stylesheet" href="<%=baseUrlPrefix%>/css/home.css" />
+<link rel="stylesheet" href="<%=baseUrlPrefix%>/css/customers.css" />
+
 <%- contentFor('scripts') %>
 <script src="<%=baseUrlPrefix%>/js/home.js" />

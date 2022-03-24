@@ -1,5 +1,106 @@
-@import './global.scss';
-.home-container{
-    padding: 2rem 4rem;
+@import "global.scss";
+
+.home-container {
+  z-index: -1;
+  .banner-cntn {
+    width: 100%;
+    .banner-background {
+      position: absolute;
+      top: 0px;
+      z-index: -1;
+      filter: brightness(50%);
+      img {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+      }
+    }
+    .banner__card {
+      border-radius: 5px;
+      background-color: $bg2;
+      padding: 10px;
+      margin: 10rem 15rem;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      .banner-border {
+        border-radius: 5px;
+        padding: 2rem 4rem;
+        margin: 1px;
+        border: 1px solid $bg3;
+        .title {
+          font-family: $pfont;
+          color: white;
+          font-size: 32px;
+        }
+        .subtitle {
+          font-family: $sfont;
+          color: white;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .feature-section {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -5px;
+    .feature__card {
+      transition: all ease-in-out 0.2s;
+      width: calc(30% - 8rem);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      margin-top: -66px;
+      background-color: $bg3;
+      padding: 2rem;
+      .features__title {
+        font-size: 18px;
+        font-family: $pfont;
+      }
+      .features__description {
+        font-size: 16px;
+        font-family: $sfont;
+        color: $bg1;
+      }
+    }
+    .feature__card:hover {
+      transform: translateY(8px);
+    }
+  }
+  .our-partners {
+    width: 100%;
+    font-size: 32px;
+    font-family: $pfont;
+    text-align: center;
+  }
+  .companies-section {
+    margin: 1rem 0px;
+    .companies__parent {
+      padding: 0px 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .companies__img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+      }
+    }
+  }
+  .footer__cntn {
+    margin-top: 4rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $bg1;
+    text-align: center;
+    padding: 2rem;
+    .footer__text {
+      color: white;
+      font-family: $pfont;
+      text-decoration: none;
+      .rohan{
+        color: $bg3;
+      }
+    }
+  }
 }
