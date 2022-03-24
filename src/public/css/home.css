@@ -17,7 +17,6 @@
 
 .home-container {
   z-index: -1;
-  background-color: #3b4d61;
 }
 
 .home-container .banner-cntn {
@@ -77,7 +76,6 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: -5px;
-  background-color: #3b4d61;
 }
 
 .home-container .feature-section .feature__card {

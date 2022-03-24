@@ -1,10 +1,8 @@
 @import "global.scss";
 
 .home-container {
-    z-index: -1;
-    background-color: $bg1;
+  z-index: -1;
   .banner-cntn {
-    //background-color: ;
     width: 100%;
     .banner-background {
       position: absolute;
@@ -46,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: -5px;
-    background-color: $bg1;
     .feature__card {
       transition: all ease-in-out 0.2s;
       width: calc(30% - 8rem);
