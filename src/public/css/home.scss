@@ -70,19 +70,36 @@
     width: 100%;
     font-size: 32px;
     font-family: $pfont;
+    text-align: center;
   }
   .companies-section {
     margin: 1rem 0px;
     .companies__parent {
+      padding: 0px 4rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      .companies__child {
-        .companies__img {
-          width: 12rem;
-          height: 12rem;
-        }
+      .companies__img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+      }
+    }
+  }
+  .footer__cntn {
+    margin-top: 4rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $bg1;
+    text-align: center;
+    padding: 2rem;
+    .footer__text {
+      color: white;
+      font-family: $pfont;
+      text-decoration: none;
+      .rohan{
+        color: $bg3;
       }
     }
   }
