@@ -1,3 +1,4 @@
+const CustomError = require("../utils/customError");
 const { sendResponse } = require("../utils/responseHandler.utils");
 const logger = require("../utils/winston.utils");
 

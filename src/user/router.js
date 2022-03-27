@@ -3,4 +3,4 @@ const { errorHandler } = require('../utils/errorHandler.middleware')
 const { registrationPage } = require('./controller');
 const router = (module.exports = express.Router());
 
-router.get('/',errorHandler(registrationPage));
+router.get('/v1/registration',errorHandler(registrationPage));

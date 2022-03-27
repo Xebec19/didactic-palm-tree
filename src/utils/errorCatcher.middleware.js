@@ -8,4 +8,7 @@ exports.errorCatcher = (err, req, res, next) => {
     logger.error("--error", err);
     res.status(err.status || 500);
     res.render("common/error", { error: err });
+    if(!err.isOperational){
+      process.exit(1);
+    }
   }
