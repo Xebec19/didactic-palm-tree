@@ -8,5 +8,5 @@ const logger = require("../utils/winston.utils");
  * @desc : renders home page
  */
 exports.homePage = async (req, res, next) => {
-  return await sendResponse({ status: true, page: "home", data: null }, res);
+  return await sendResponse({ status: true, page: "home-page/home", data: null }, res);
 };
