@@ -4,7 +4,7 @@ const logger = require("../utils/winston.utils");
 /**
  * @type : Request Controller
  * @method : GET
- * @route : /public/home
+ * @route : /home
  * @desc : renders home page
  */
 exports.homePage = async (req, res, next) => {

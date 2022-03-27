@@ -27,5 +27,6 @@ app.get('/',(req,res,next) => {
 });
 
 app.use("/home", require("./home/router"));
+app.use("/v1/user", require("./user/router"));
 
 app.use(errorCatcher);
