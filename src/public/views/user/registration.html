@@ -1,1 +1,53 @@
-<h1>Registration Page</h1>
+<section class="registration__cntn">
+  <div class="registration__card">
+    <table>
+      <tr>
+        <td>
+          <label for="user-name">User Name</label>
+        </td>
+        <td>
+          <input type="text" name="user-name" id="user-name" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="first-name">First Name</label>
+        </td>
+        <td>
+          <input type="text" name="first-name" id="first-name" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="last-name">Last Name</label>
+        </td>
+        <td>
+          <input type="text" name="last-name" id="last-name" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email</label>
+        </td>
+        <td>
+          <input type="text" name="email" id="email" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="password">Password</label>
+        </td>
+        <td>
+          <input type="password" name="password" id="password" />
+        </td>
+      </tr>
+    </table>
+    <div class="registration__error hide" id="registration__error"></div>
+    <div class="registration__actions"><button class="registration__submit-btn">Submit</button></div>
+  </div>
+</section>
+
+<%- contentFor('styles') %>
+<link rel="stylesheet" href="/css/user.css" />
+
+<%- contentFor('scripts') %>
