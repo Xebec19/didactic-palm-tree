@@ -23,9 +23,9 @@ app.use(addGlobals);
 app.set('layout', 'layouts/layout');
 
 app.get('/',(req,res,next) => {
-  res.redirect('/public/home');
+  res.redirect('/home');
 });
 
-app.use("/public", require("./routes/home"));
+app.use("/home", require("./home/router"));
 
 app.use(errorCatcher);
